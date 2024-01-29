@@ -3,7 +3,9 @@
 concatonating two arrays
 """
 
+
 def cat_arrays(arr1, arr2):
     """
     a function that returns a new concatonated list
     """
+    return arr1 + arr2
