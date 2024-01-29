@@ -11,7 +11,7 @@ def matrix_transpose(matrix):
     Returns:
     - transposed matrix with how the matrix was "trasformed" given the graph.
 
-    the I-hat and J-hat are the emphasis of the equation being the Base position of transformation.
+    the I-hat and J-hat are Base for the matrix transformation.
 
     """
     transposed_matrix = [[row[i] for row in matrix]
