@@ -14,7 +14,6 @@ def matrix_transpose(matrix):
     the I-hat and J-hat are Base for the matrix transformation.
 
     """
-    transposed_matrix = [[row[i] for row in matrix]
-                for i in range(len(matrix[0]))]
+    transposed = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 
-    return transposed_matrix
+    return transposed
