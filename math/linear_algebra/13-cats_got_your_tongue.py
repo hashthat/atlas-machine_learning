@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import numpy as np
 """
 this is a function that concatenates two
 matricies along a specific axis
@@ -7,6 +6,12 @@ matricies along a specific axis
 mat1 and mat2 can be interpreted by numpy.ndarray
 Return: numpy.ndarray
 mat1 and mat2 are never empty -- this is the assumption
+"""
+
+
+import np as numpy
+"""
+importing numpy for leveraging cool things
 """
 
 
