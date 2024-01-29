@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
-import numpy as np
 """
 saddling up with numpy!
+"""
+
+import numpy as np
+"""
+thank you numpy for being my springboard
 """
 
 
