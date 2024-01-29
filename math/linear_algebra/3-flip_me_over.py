@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+    """
+    everything is documented
+    """
 
 def matrix_transpose(matrix):
 
