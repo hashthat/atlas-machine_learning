@@ -4,17 +4,14 @@ utilizing numpy.ndarray hence mat1 and mat2.
 Return a tuple containing the element-wise sum,
 difference, product and qutient.
 mat1 and mat2 are never empty
+https://bit.ly/np_arithmetic
 """
 
 
 def np_elementwise(mat1, mat2):
     """
-    this function performs elementwise
+    the operation of this function performs elementwise
     addition, subtraction, multiplication, division
     """
 
-    if mat1.shape != mat2.shape:
-        raise ValueError("We Do not Coexist.") # https://bit.ly/np_arithmetic
-
-    if 
-    return 
+    return (mat1 + mat2, mat1 * mat2, mat1 - mat2, mat1 / mat2)
