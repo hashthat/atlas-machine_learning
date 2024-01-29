@@ -14,6 +14,6 @@ def matrix_shape(matrix):
         
         shape.append(rows)
         if isinstance(matrix[0], list):
-            shape.append(matrix_shape(matrix[0])
+            shape.append(matrix_shape(matrix[0]))
         
         return shape
