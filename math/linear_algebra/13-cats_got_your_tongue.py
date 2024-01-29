@@ -11,9 +11,10 @@ mat1 and mat2 are never empty -- this is the assumption
 
 
 def np_cat(mat1, mat2, axis=0):
-    # https://bit.ly/np_cat
-
     """
+    ====================
+    https://bit.ly/np_cat
+    =====================
     Leveraging Numpy with np.concatonate
     as the function is transformed from the input
     to the output of this specific procedure
