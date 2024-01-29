@@ -1,20 +1,14 @@
 #!/usr/bin/env python3
-    
-    """
-    matrix_transpose
-    Transpose the matrix given from the test/main file
 
-    Parameters:
-    - matrix: a 2D list that represents the matrix
+"""
+matrix_transpose - J and I hat are the base of the vectors for the matrix position
+Returns: Transposed Matrix
 
-    Returns:
-    - transposed matrix with how the matrix was "trasformed" given the graph.
+"""
 
-    the I-hat and J-hat are Base for the matrix transformation.
 
-    """
-    def matrix_transpose(matrix):
+def matrix_transpose(matrix):
 
     transposed = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
-
     return transposed
+
