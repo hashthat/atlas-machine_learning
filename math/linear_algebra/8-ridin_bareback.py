@@ -27,3 +27,5 @@ def mat_mul(mat1, mat2):
     this is where the result of the function comes into play
     given the format of the matricies being multiplied
     """
+    mtrx = [[sum(i * j for i, j in zip(row1, col2)) for col2 in zip(*mat2)] for row1 in mat1]
+    return mtrx
