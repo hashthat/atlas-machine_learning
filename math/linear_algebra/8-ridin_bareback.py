@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 multiplying 2 Matricies
+https://stackoverflow.com/questions/10508021/matrix-multiplication-in-pure-python
 """
 
 
