@@ -7,12 +7,18 @@ the function will express the shape
 
 def matrix_shape(matrix):
     """
-    tuple or a list given the shape
-    shaping linear shapes is key
+    matrix_shape(matrix) distinguishes an integer or list
+    in which the matrix is printed in
     """
-    if type(matrix[0]) is not list:
-        return ((len(matrix),))
-    else:
+    if isinstance(matrix, list):
         rows = len(matrix)
-        cols = len(matrix[0]) if matrix[0] else 0
-        return [rows, cols]
+        # cols = len(matrix[0]) if matrix and matrix[0] else 0
+        shape = []
+
+        shape.append(rows)
+        if isinstance(matrix[0], list):
+            shape.append(matrix_shape(matrix[0])[0])
+        elif type(matrix[0]) is int:
+            shape.append(len(matrix))
+        # return the list and int shape of the matrix
+        return shape
