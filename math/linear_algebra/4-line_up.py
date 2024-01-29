@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 """
 concatonating two arrays
+given their elements (zip)
+
+arr1 and arr2 are lists of integers and floats.
+
+Returns:
+    - New List representing (arr1 + arr2)
+    if arr1 and arr2 are not the same shape
+    return None!
 """
 
 
