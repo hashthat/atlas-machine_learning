@@ -9,7 +9,7 @@ mat1 and mat2 are never empty -- this is the assumption
 """
 
 
-import np as numpy
+import numpy as np
 """
 importing numpy for leveraging cool things
 """
