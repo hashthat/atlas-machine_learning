@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
+    
     """
-    everything is documented
-    """
-
-def matrix_transpose(matrix):
-
-    """
+    matrix_transpose
     Transpose the matrix given from the test/main file
 
     Parameters:
@@ -17,6 +13,8 @@ def matrix_transpose(matrix):
     the I-hat and J-hat are Base for the matrix transformation.
 
     """
+    def matrix_transpose(matrix):
+
     transposed = [[row[i] for row in matrix] for i in range(len(matrix[0]))]
 
     return transposed
