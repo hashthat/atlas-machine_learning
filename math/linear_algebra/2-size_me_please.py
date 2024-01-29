@@ -3,7 +3,7 @@
 def matrix_shape(matrix):
     
     # check if the matrix is a list or integer
-    if isinstance(matrix, list)
+    if isinstance(matrix, list):
     # is the number a list or an integer?? I need some Recursive help!!!
     # find the rows and columns of the matrix for the expression needed to solve the equation.
         
@@ -13,9 +13,7 @@ def matrix_shape(matrix):
         
         
         shape.append(rows)
-        # shape.append(cols)
-
-    # return the shape with a tuple
-    # error for getting the proper length of the matrix
-    
+        if isinstance(matrix[0], list):
+            shape.append(matrix_shape(matrix[0])
+        
         return shape
