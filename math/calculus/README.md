@@ -12,6 +12,13 @@ the "coin" of the equation has to do with the k changing the value or incremente
 
 "(9i-2)+(9i-4)+(9i-6)+(9i-8)" = "36i-20"
 
+# problem number 3 = 0! 
+has a trick question (something I look out for given, it's mathematics). ==> to re write problem three it would add up to
+the factorial of "0" which is --- Zero~
+
+
+
+
 # These area few Resources I found along the way
 1) chain rule
 https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a/v/chain-rule-introduction
