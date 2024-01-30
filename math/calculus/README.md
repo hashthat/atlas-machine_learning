@@ -29,6 +29,8 @@ https://personal.math.ubc.ca/~feldman/m263/formulae.pdf
 4) youtube tutorials
 https://www.youtube.com/watch?v=GEUuZ1BnIIU
 https://www.youtube.com/watch?v=eiKMGm7vDKw
+5) list of integrals
+https://byjus.com/integral-formulas/
 
 # CHAIN RULE Explained through ChatGPT
 =======================================
