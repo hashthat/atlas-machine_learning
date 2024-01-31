@@ -8,4 +8,9 @@ np.random.seed(5)
 x, y = np.random.multivariate_normal(mean, cov, 2000).T
 y += 180
 
-# your code here
+
+plt.title("Men's Height vs Weight")
+plt.ylabel("Weight (lbs)")
+plt.xlabel("Height (in)")
+plt.scatter(x, y, alpha=0.5, color='magenta') # Creates the scatter plot with the spec
+plt.show()

@@ -4,5 +4,6 @@ import matplotlib.pyplot as plt
 
 y = np.arange(0, 11) ** 3
 
-# your code here
+plt.plot(y, color='r')
+plt.show()
 
