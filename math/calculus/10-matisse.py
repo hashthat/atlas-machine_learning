@@ -12,3 +12,14 @@ def poly_derivative(poly):
     [5, 3, 0, 1] = f(x) = x3, + 3x + 5
     Return: coefficients representing the derivative
     """
+    
+    if not isinstance(poly, list):
+        raise ValueError("This is not a List!")
+    
+    derivative = []
+    for i in range (1, len(poly)):
+        
+        derivative.append(poly[i] * i)
+        
+        
+    return derivative
