@@ -14,7 +14,7 @@ def poly_derivative(poly):
     """
 
     if not isinstance(poly, list):
-        raise ValueError("This is not a List!")
+        return None
 
     derivative = []
     for i in range(1, len(poly)):
