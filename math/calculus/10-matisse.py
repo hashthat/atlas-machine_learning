@@ -17,7 +17,7 @@ def poly_derivative(poly):
         raise ValueError("This is not a List!")
 
     derivative = []
-    for i in range (1, len(poly)):
+    for i in range(1, len(poly)):
 
         derivative.append(poly[i] * i)
     return derivative
