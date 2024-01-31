@@ -12,12 +12,10 @@ def poly_derivative(poly):
     [5, 3, 0, 1] = f(x) = x3, + 3x + 5
     Return: coefficients representing the derivative
     """
-    if not isinstance(n, int) or n <= 0:
-        return None
+
+    if len(poly) < 2:
+        return [0]
     
-
-    derivative = []
-    for i in range(1, len(poly)):
-
-        derivative.append(poly[i] * i)
-    return derivative
+    coeffs = [poly[i] * i for i in range(len(poly)-1, 0, -1)]
+    
+    return coeffs
