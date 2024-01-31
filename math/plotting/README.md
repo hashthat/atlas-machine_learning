@@ -1,5 +1,8 @@
 # These are some key features of the Matplotlib library and functionalities for data visualization in the Python Ecosystem.
 
+Examples of the graphs and the implimentation of the graphs are given through this link.
+https://www.geeksforgeeks.org/matplotlib-tutorial/
+
     Line Plots:
         Matplotlib's plt.plot() function is commonly used to create line plots. It can handle simple plots with automatic data point connection or more complex plots with explicit x and y values.
 
