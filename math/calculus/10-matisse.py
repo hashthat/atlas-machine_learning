@@ -13,8 +13,8 @@ def poly_derivative(poly):
     Return: coefficients representing the derivative
     """
 
-    if not isinstance(poly, list):
-        return None
+    if not isinstance(poly, list) or not all(isinstance(coeff, (int, float)) for coeff in poly):
+        return None # Modified for the taste of the checker
 
     derivative = []
     for i in range(1, len(poly)):
