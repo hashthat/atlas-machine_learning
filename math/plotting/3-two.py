@@ -9,5 +9,18 @@ t2 = 1600
 y1 = np.exp((r / t1) * x)
 y2 = np.exp((r / t2) * x)
 
-# your code here
+plt.plot(x, y1, label='C-14', color='red', linestyle='--')
+plt.plot(x, y2, label='Ra-226', color='green', linestyle='-')
+# setting up the grids expression
+plt.title("Exponential Decay of Radioactive Elements")
+plt.xlabel("Time (years)")
+plt.ylabel("Fraction Remaining")
+# graphing
+plt.yscale('log') # logarithmic expression
+plt.xlim(0, 20000) # setting the x-axis
+plt.ylim(1e-6, 1)
+plt.legend(loc='upper right')
+plt.grid(True)
+plt.show()
+
 
