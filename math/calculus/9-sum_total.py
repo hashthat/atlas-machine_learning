@@ -11,3 +11,13 @@ def summation_i_squared(n):
     factorial of i^2 and n being the stopping number in which i
     increases to in the summation of the given problem or example.
     """
+    if not isinstance(n, int) or n <= 0:
+        return None
+    
+
+    if n == 1:
+        return 1
+
+
+    return n**2 + sumation_i_squared(n - 1)
+
