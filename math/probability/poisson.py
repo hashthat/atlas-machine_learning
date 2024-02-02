@@ -12,7 +12,7 @@ class Poisson:
     """
 
 
-def __init__(self, data=None, lambtha=1.):
+def __init__(self, data=None, lambtha=1.0):
     """
     creating the prediction through an intuitive series
     """
