@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
 class Poisson:
+    """
+    The poisson distribution, named after Siméon Denis Poisson
+    is an expression where the probability of a fixed-size interval
+    with a given number of events occuring in the fixed interval
+    given time or space.
+    poisson is Discrete meaning it can only take on whole
+    numbers where the lambtha is a positive real number
+    with a single parameter and represents the average
+    rate of events.
+    """
     def __init__(self, data=None, lambtha=1.):
         if data is None:
             if lambtha <= 0:
@@ -11,7 +21,5 @@ class Poisson:
                 raise TypeError("data must be a list")
             if len(data) < 2:
                 raise ValueError("data must contain multiple values")
-            
-            # Calculate the lambtha of data
             self.lambtha = sum(data) / len(data)
             self.data = data
