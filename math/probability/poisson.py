@@ -2,6 +2,8 @@
 """
 creating the class Poisson
 """
+
+
 class Poisson:
     """
     The poisson distribution, named after Siméon Denis Poisson
