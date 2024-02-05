@@ -18,7 +18,7 @@ def poly_integral(poly, C=0):
     integral_coeffs = [C]
 
     for i, coef in enumerate(poly):
-        if not isinstance(coef, (int, float)):
+        if not isinstance(coef, (int)):
             return None
 
         power = i + 1
