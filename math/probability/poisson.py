@@ -40,5 +40,4 @@ class Poisson:
         if k < 0:
             return 0  # k is out of range, return 0
         else:
-            return (math.exp(-self.lambtha) * self.lambtha**k) / math.factorial(k)
-
+            return (math.exp(-self.lambtha)*self.lambtha**k)/math.factorial(k)
