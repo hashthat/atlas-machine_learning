@@ -41,3 +41,15 @@ class Poisson:
             return 0  # k is out of range, return 0
         else:
             return (math.exp(-self.lambtha)*self.lambtha**k)/math.factorial(k)
+
+    def cdf(self, k):
+        """Calculate the CDF value for a given number of 'successes' (k)."""
+        k = int(k)  # Convert k to an integer
+
+        if k < 0:
+            return 0  # k is out of range, return 0
+        else:
+            cdf_value = 0
+            for i in range(k + 1):
+                cdf_value += self.pmf(i)
+            return cdf_value
