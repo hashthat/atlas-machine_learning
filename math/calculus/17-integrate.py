@@ -7,7 +7,22 @@ the returned list should be as small as possible
 """
 
 
-def poly_integral(poly, c=0):
+def poly_integral(poly, C=0):
     """
     a function that calculates the integral of a polynomial
     """
+
+    if not isinstance(poly, list) or not all(isinstance(coef, (int, float)) for coef in poly) or not isinstance(C, int):
+        return None
+
+    integral_coeffs = [C]
+
+    for i, coef in enumerate(poly):
+        if not isinstance(coef, (int, float)):
+            return None
+
+        power = i + 1
+        new_coef = coef / power
+        integral_coeffs.append(new_coef)
+
+    return integral_coeffs
