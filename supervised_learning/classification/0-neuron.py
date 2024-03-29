@@ -8,7 +8,7 @@ creating a neuron class
 
 
 class Neuron:
-    
+
     """
     this is the class of developing a Neuron
     nx is the number of input features
@@ -19,8 +19,7 @@ class Neuron:
     initialized to 0.
     """
 
-
-
+    
     def __init__(self, nx):
         if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
@@ -30,4 +29,3 @@ class Neuron:
         self.W = np.random.randn(1, nx)
         self.b = 0
         self.A = 0
-
