@@ -1,11 +1,26 @@
 #!/usr/bin/env python3
+
 import numpy as np
+
 '''
 creating a neuron class
 '''
 
 
 class Neuron:
+    
+    """
+    this is the class of developing a Neuron
+    nx is the number of input features
+    W ~ Weights vector for the neuron
+    b ~ the Bias
+    A ~ Activation output (prediction) of the neuron.
+    upon the instantiation, the activation output should be
+    initialized to 0.
+    """
+
+
+
     def __init__(self, nx):
         if not isinstance(nx, int):
             raise TypeError("nx must be an integer")
@@ -27,4 +42,3 @@ class Neuron:
     @property
     def A(self):
         return self.__A
-
