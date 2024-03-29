@@ -1,7 +1,10 @@
 Asking ChatGPT about the features of a Neuron given the neural network, I searched for some of the more important questions concerning the Neuron's development. I was helped with a fellow Atlas School Student. These were the important parts of the development process to focus on 
 
 =============================================================================================
+"By considering these features and implementing them effectively, you can develop a well-performing neuron as part of a neural network for various machine learning tasks."
 
+
+=========
 Activation Function: Choose an appropriate activation function for the neuron. Common choices include sigmoid, tanh, ReLU (Rectified Linear Unit), Leaky ReLU, etc. The choice of activation function affects the non-linearity and learning dynamics of the neural network.
 
 Weights and Bias: Initialize weights and bias appropriately. Weights are typically initialized randomly, often from a normal distribution, and bias is usually initialized to zero.
