@@ -8,7 +8,7 @@ creating a neuron class
 
 
 class Neuron:
-    
+
     """
     this is the class of developing a Neuron
     nx is the number of input features
@@ -18,8 +18,6 @@ class Neuron:
     upon the instantiation, the activation output should be
     initialized to 0.
     """
-
-
 
     def __init__(self, nx):
         if not isinstance(nx, int):
