@@ -1,4 +1,8 @@
 # atlas-machine_learning
+# Exersizes!
+
+https://www.linkedin.com/posts/tom-yeh_aibyhand-march-llm-activity-7180392148284973057-barf?utm_source=share&utm_medium=member_desktop
+
 
 # A must read Blog!
 http://colah.github.io/posts/2015-09-NN-Types-FP/
