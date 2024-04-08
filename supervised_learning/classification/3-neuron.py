@@ -57,8 +57,6 @@ class Neuron:
         avoid division by zero errors
         """
 
-
-
         epsilon = 1.0000001
         m = Y.shape[1]
         cost = -(1/m) * np.sum(Y * np.log(A) + (1 - Y) * np.log(epsilon - A))
