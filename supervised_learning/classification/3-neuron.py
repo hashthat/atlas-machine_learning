@@ -53,14 +53,13 @@ class Neuron:
         return self.__A
 
     def cost(self, Y, A):
-        
         """
         avoid division by zero errors
         """
 
 
-        epsilon = 1.0000001
 
+        epsilon = 1.0000001
         m = Y.shape[1]
         cost = -(1/m) * np.sum(Y * np.log(A) + (1 - Y) * np.log(epsilon - A))
 
