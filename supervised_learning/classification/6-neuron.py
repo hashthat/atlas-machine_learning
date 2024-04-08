@@ -57,7 +57,7 @@ class Neuron:
         pre = self.forward_prop(X)
 
         # Convert predictions to binary labels
-        binary_predictions = np.where(predictions >= 0.5, 1, 0)
+        binary_predictions = np.where(pre >= 0.5, 1, 0)
 
         # Calculate cost using logistic regression formula
         m = Y.shape[1]
