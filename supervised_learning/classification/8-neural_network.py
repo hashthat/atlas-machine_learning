@@ -12,16 +12,16 @@ class NeuralNetwork():
     """
 
     def __init__(self, nx, nodes):
-        # Validate nx
-        if not isinstance(nx, int):
+        # NX < 1
+        if type(nx) is not int:
             raise TypeError("nx must be an integer")
-        if nx < 1:
+        if type(nx) is int and nx < 1:
             raise ValueError("nx must be a positive integer")
 
         # Validate nodes
-        if not isinstance(nodes, int):
+        if type(nodes) is not int:
             raise TypeError("nodes must be an integer")
-        if nodes < 1:
+        if type(nodes) is int and nodes < 1:
             raise ValueError("nodes must be a positive integer")
 
         # Initialize weights and biases for the hidden layer
