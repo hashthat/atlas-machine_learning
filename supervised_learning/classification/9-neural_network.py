@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Creating a Module that is the Class of a NeuralNet"""
 import numpy as np
 
 
