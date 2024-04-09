@@ -3,7 +3,7 @@
 import numpy as np
 
 
-class NeuralNetwork:
+class NeuralNetwork():
     """
     This class is defining a NeuralNetwork
     basically a MatrixProduct utilizing the
