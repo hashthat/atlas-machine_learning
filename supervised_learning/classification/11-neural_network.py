@@ -77,9 +77,8 @@ class NeuralNetwork():
         A is numpy.ndarray
         both with shape 1, m
         """
+        epsilon = 1.0000001
         m = Y.shape[1]
-
-        # Compute the cross-entropy cost
-        cost = -np.sum((Y * np.log(A)) + ((1 - Y) * np.log(1 - A))) / m
+        cost = -(1/m) * np.sum(Y * np.log(A) + (1 - Y) * np.log(epsilon - A))
 
         return cost
