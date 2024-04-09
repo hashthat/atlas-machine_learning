@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+"""Creating a Neural Network from Scratch!"""
 import numpy as np
 
 
@@ -15,13 +15,13 @@ class NeuralNetwork():
         # NX < 1
         if type(nx) is not int:
             raise TypeError("nx must be an integer")
-        if type(nx) is int and nx < 1:
+        if nx <= 0:
             raise ValueError("nx must be a positive integer")
 
         # Validate nodes
         if type(nodes) is not int:
             raise TypeError("nodes must be an integer")
-        if type(nodes) is int and nodes < 1:
+        if nodes <= 1:
             raise ValueError("nodes must be a positive integer")
 
         # Initialize weights and biases for the hidden layer
