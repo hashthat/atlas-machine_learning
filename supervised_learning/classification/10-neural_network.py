@@ -9,6 +9,7 @@ class NeuralNetwork():
     basically a MatrixProduct utilizing the
     dot product in measuring the weights and
     biases of a net.
+    sigmoid: a function for mathematical expression
     """
 
     def __init__(self, nx, nodes):
@@ -59,7 +60,6 @@ class NeuralNetwork():
     into the context of probability given
     the output of the function of the neural network
     """
-
 
     def forward_prop(self, X):
         # Activation of the computed hidden layer
