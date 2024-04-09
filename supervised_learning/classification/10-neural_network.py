@@ -50,17 +50,23 @@ class NeuralNetwork():
     @property
     def A2(self):
         return self.__A2
-    
+
     def sigmoid(self, Z):
         return 1 / (1 + np.exp(-Z))
-    
-    
+
+    """
+    sigmoid is the strategy to convert weighted sums
+    into the context of probability given
+    the output of the function of the neural network
+    """
+
+
     def forward_prop(self, X):
-        #Activation of the computed hidden layer
+        # Activation of the computed hidden layer
         Z1 = np.dot(self.W1, X) + self.b1
         self.__A1 = self.sigmoid(Z1)
-    
+
         Z2 = np.dot(self.__W2, self.__A1) + self.b2
         self.__A2 = self.sigmoid(Z2)
 
-        return self.__A1, self.__A2    
+        return self.__A1, self.__A2
