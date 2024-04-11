@@ -44,23 +44,16 @@ class Neuron:
     def sigmoid(self, x):
         return 1 / (1 + np.exp(-x))
 
-    def forward_prop(self, X):
-        # weighted sum calculation
-        weighted_sum = np.dot(self.W, X) + self.b
-        # apply Sigmoid activation function
-        self.__A = self.sigmoid(weighted_sum)
-
-        return self.__A
-    
     def evaluate(self, X, Y):
-        # Perform forward propagation to get predictions
-        predictions = self.forward_prop(X)
+        # Forward propagation to get predictions
+        Z = np.dot(self.weights.T, X) + self.bias
+        A = self.activate(Z)
 
-        # Convert predictions to binary labels
-        binary_predictions = np.where(predictions >= 0.5, 1, 0)
+        # Convert predictions to binary labels (1 if >= 0.5, 0 otherwise)
+        predictions = np.where(A >= 0.5, 1, 0)
 
-        # Calculate cost using logistic regression formula
-        m = Y.shape[1]
-        cost = -(1/m) * np.sum(Y * np.log(predictions) + (1 - Y) * np.log(1 - predictions))
+        # Compute cost (binary cross-entropy)
+        m = X.shape[1]
+        cost = -np.mean(Y * np.log(A) + (1 - Y) * np.log(1 - A))
 
-        return binary_predictions, cost
+        return predictions, cost
