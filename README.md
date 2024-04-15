@@ -1,6 +1,6 @@
 # atlas-machine_learning
 # Exersizes!
-
+# :j#&F!fUQ95L7Ew
 https://www.linkedin.com/posts/tom-yeh_aibyhand-march-llm-activity-7180392148284973057-barf?utm_source=share&utm_medium=member_desktop
 
 # A must for Wiki and AI
